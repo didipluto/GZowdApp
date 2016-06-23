@@ -23,7 +23,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         mTvResult = (TextView) findViewById(R.id.tv_result);
         webLink = (TextView) findViewById(R.id.web_link);
-        webLink.setText(mTvResult.getText());
+        weblink = mTvResult.getText().toString();
+
     }
 
     public void scan(View view){
@@ -43,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
             Bundle bundle = data.getExtras();
             String result = bundle.getString("result");
             mTvResult.setText(result);
-            weblink = result;
+            webLink.setText(mTvResult.getText().toString());
         }
     }
 }
