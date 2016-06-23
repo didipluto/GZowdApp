@@ -28,4 +28,26 @@
         android:textSize="16sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go to the WebScreen"
+        android:id="@+id/goToWS_bt"
+        android:onClick="goToWS" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WebLink"
+        android:id="@+id/textView2"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/web_link"
+        android:textSize="16sp" />
+
 </LinearLayout>
